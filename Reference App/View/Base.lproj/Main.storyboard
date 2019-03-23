@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HWi-C4-zaE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HWi-C4-zaE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -42,7 +41,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ElD-2V-UUw" kind="show" id="Sj8-Bn-42j"/>
+                                    <segue destination="ElD-2V-UUw" kind="show" identifier="ItemSeque" id="Sj8-Bn-42j"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -57,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="742" y="239"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Reference Item Table View Controller-->
         <scene sceneID="Ilc-nd-oAn">
             <objects>
-                <tableViewController id="ElD-2V-UUw" sceneMemberID="viewController">
+                <tableViewController id="ElD-2V-UUw" customClass="ReferenceItemTableViewController" customModule="Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="UrT-tv-bH9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,8 +126,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pgW-qM-Ul9">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Змея" translatesAutoresizingMaskIntoConstraints="NO" id="pgW-qM-Ul9">
+                                                    <rect key="frame" x="0.0" y="-13" width="375" height="312"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -147,10 +146,15 @@
                             <outlet property="delegate" destination="ElD-2V-UUw" id="YIR-kI-RmR"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="contentLabel" destination="S9c-vY-6RA" id="lvp-48-BPx"/>
+                        <outlet property="imageView" destination="pgW-qM-Ul9" id="fky-hL-ZG7"/>
+                        <outlet property="nameLabel" destination="H0i-uw-gyC" id="dIa-pc-xH1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2MN-IH-o8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="239"/>
+            <point key="canvasLocation" x="1653.5999999999999" y="238.83058470764618"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d0y-Sx-VVr">
@@ -169,4 +173,7 @@
             <point key="canvasLocation" x="-210" y="239"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Змея" width="120" height="120"/>
+    </resources>
 </document>

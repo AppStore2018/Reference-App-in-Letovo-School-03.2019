@@ -34,5 +34,11 @@ class ReferenceTableViewController: UITableViewController {
         
         return cell
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "ItemSeque" else { return }
+        let destination = segue.destination as! ReferenceItemTableViewController
+        let index = tableView.indexPathForSelectedRow!.row
+        destination.dream = dreams[index]
+    }
 }

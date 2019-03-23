@@ -13,6 +13,7 @@
 		69259EBF222AB16800AD8ED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69259EBD222AB16800AD8ED7 /* LaunchScreen.storyboard */; };
 		69259EC7222AB62700AD8ED7 /* ReferenceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69259EC6222AB62700AD8ED7 /* ReferenceTableViewController.swift */; };
 		69E2A27C2233E7D60009125B /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E2A27B2233E7D60009125B /* Dream.swift */; };
+		D5861E1122465CB50016BC75 /* ReferenceItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5861E1022465CB50016BC75 /* ReferenceItemTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		69259EC0222AB16800AD8ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69259EC6222AB62700AD8ED7 /* ReferenceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceTableViewController.swift; sourceTree = "<group>"; };
 		69E2A27B2233E7D60009125B /* Dream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
+		D5861E1022465CB50016BC75 /* ReferenceItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceItemTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		69E2A27A2233E5380009125B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D5861E1022465CB50016BC75 /* ReferenceItemTableViewController.swift */,
 				69259EC6222AB62700AD8ED7 /* ReferenceTableViewController.swift */,
 			);
 			path = Controller;
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5861E1122465CB50016BC75 /* ReferenceItemTableViewController.swift in Sources */,
 				69259EB5222AB16500AD8ED7 /* AppDelegate.swift in Sources */,
 				69259EC7222AB62700AD8ED7 /* ReferenceTableViewController.swift in Sources */,
 				69E2A27C2233E7D60009125B /* Dream.swift in Sources */,
@@ -313,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				INFOPLIST_FILE = "Reference App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,6 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				INFOPLIST_FILE = "Reference App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
